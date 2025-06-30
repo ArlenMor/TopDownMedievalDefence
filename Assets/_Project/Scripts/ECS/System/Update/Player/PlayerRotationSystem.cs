@@ -3,7 +3,7 @@ using Project.Component;
 using Project.EcsExample;
 using UnityEngine;
 
-namespace Project.System.Update
+namespace Project.System.Update.Player
 {
 	public class PlayerRotationSystem: IEcsRunSystem
 	{

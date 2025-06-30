@@ -2,7 +2,7 @@
 using Project.Component;
 using UnityEngine;
 
-namespace Project.System
+namespace Project.System.Update.Player
 {
 	public sealed class PlayerInputSystem: IEcsRunSystem
 	{

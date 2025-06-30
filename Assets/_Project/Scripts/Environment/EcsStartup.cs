@@ -1,8 +1,7 @@
 using Leopotam.Ecs;
 using Leopotam.Ecs.UnityIntegration;
-using Project.System;
 using Project.System.Init;
-using Project.System.Update;
+using Project.System.Update.Player;
 using UnityEngine;
 
 namespace Project.EcsExample
@@ -43,7 +42,8 @@ namespace Project.EcsExample
 		private void RegisterUpdateSystems() => _updateSystems
 		                                       .Add(new PlayerInputSystem())
 		                                       .Add(new PlayerMoveSystem())
-		                                       .Add(new PlayerRotationSystem());
+		                                       .Add(new PlayerRotationSystem())
+		                                       .Add(new PlayerAnimationSystem());
 
 		private void InjectSystems(RuntimeData runtimeData) => _updateSystems.Inject(Configuration)
 		                                                                     .Inject(SceneData)

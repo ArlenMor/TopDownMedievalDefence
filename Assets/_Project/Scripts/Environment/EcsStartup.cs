@@ -1,4 +1,5 @@
 using Leopotam.Ecs;
+using Leopotam.Ecs.UnityIntegration;
 using Project.System;
 using Project.System.Init;
 using Project.System.Update;
@@ -14,6 +15,11 @@ namespace Project.EcsExample
 		private void Start()
 		{
 			_world = new EcsWorld();
+			
+			#if UNITY_EDITOR
+			EcsWorldObserver.Create(_world);
+			#endif  
+			
 			_updateSystems = new EcsSystems(_world);
 
 			var runtimeData = new RuntimeData();
@@ -23,6 +29,10 @@ namespace Project.EcsExample
 			InjectSystems(runtimeData);
 
 			_updateSystems.Init();
+			
+			#if UNITY_EDITOR
+			EcsSystemsObserver.Create(_updateSystems);
+			#endif
 		}
 
 		public StaticData Configuration;

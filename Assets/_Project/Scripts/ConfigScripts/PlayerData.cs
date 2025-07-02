@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Project.EcsExample
+namespace Project.ConfigScripts
 {
 	[CreateAssetMenu(fileName = "PlayerData", menuName = "StaticData/PlayerData")]
 	public class PlayerData: ScriptableObject

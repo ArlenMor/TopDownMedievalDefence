@@ -5,7 +5,7 @@ namespace Project.System.Update.DebugProject
 {
 	public sealed class DebugTemplateSystem: IEcsRunSystem
 	{
-		private readonly EcsFilter<PlayerComponent> _filter = null;
+		private readonly EcsFilter<PlayerFlag> _filter = null;
 
 		public void Run()
 		{

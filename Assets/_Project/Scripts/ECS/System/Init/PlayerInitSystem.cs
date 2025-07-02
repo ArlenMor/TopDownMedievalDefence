@@ -1,5 +1,6 @@
 ﻿using Leopotam.Ecs;
 using Project.Component;
+using Project.ConfigScripts;
 using Project.EcsExample;
 using UnityEngine;
 
@@ -15,7 +16,7 @@ namespace Project.System.Init
 		{
 			var playerEntity = _ecsWorld.NewEntity();
 
-			playerEntity.Get<PlayerComponent>();
+			playerEntity.Get<PlayerFlag>();
 			playerEntity.Get<InputComponent>();
 
 			ref var playerTransform = ref playerEntity.Get<TransformComponent>();

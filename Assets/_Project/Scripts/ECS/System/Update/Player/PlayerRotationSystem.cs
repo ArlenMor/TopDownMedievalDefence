@@ -7,7 +7,7 @@ namespace Project.System.Update.Player
 {
 	public class PlayerRotationSystem: IEcsRunSystem
 	{
-		private readonly EcsFilter<PlayerComponent, TransformComponent, RotationSpeedComponent> _player = null;
+		private readonly EcsFilter<PlayerFlag, TransformComponent, RotationSpeedComponent> _player = null;
 		private SceneData _sceneData;
 
 		public void Run()

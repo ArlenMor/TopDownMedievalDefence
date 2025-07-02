@@ -6,7 +6,7 @@ namespace Project.System.Update.Player
 {
 	public sealed class PlayerInputSystem: IEcsRunSystem
 	{
-		private readonly EcsFilter<PlayerComponent, InputComponent> _player = null;
+		private readonly EcsFilter<PlayerFlag, InputComponent> _player = null;
 
 		public void Run()
 		{

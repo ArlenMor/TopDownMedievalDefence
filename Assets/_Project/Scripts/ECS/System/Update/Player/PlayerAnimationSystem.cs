@@ -6,7 +6,7 @@ namespace Project.System.Update.Player
 {
 	public class PlayerAnimationSystem: IEcsRunSystem
 	{
-		private EcsFilter<PlayerComponent, InputComponent, AnimatorComponent> _filter = null;
+		private EcsFilter<PlayerFlag, InputComponent, AnimatorComponent> _filter = null;
 
 		public void Run()
 		{
@@ -21,7 +21,6 @@ namespace Project.System.Update.Player
 				}
 				else
 				{
-					
 					animator.Animator.SetBool("IsMoving", true);
 				}
 			}

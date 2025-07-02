@@ -6,7 +6,7 @@ namespace Project.System.Update.Player
 {
 	public sealed class PlayerMoveSystem: IEcsRunSystem
 	{
-		private readonly EcsFilter<PlayerComponent, InputComponent, TransformComponent, MoveSpeedComponent> _player =
+		private readonly EcsFilter<PlayerFlag, InputComponent, TransformComponent, MoveSpeedComponent> _player =
 				null;
 
 		public void Run()

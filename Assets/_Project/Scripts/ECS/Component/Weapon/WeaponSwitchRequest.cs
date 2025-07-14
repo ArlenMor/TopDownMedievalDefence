@@ -2,6 +2,6 @@
 {
 	public struct WeaponSwitchRequest
 	{
-		public int WeaponIndex; // Или ID, или ссылка на префаб
+		public int WeaponIndex;
 	}
 }

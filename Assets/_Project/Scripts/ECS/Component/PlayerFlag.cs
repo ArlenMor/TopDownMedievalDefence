@@ -1,6 +1,7 @@
-﻿using Leopotam.Ecs;
-
-namespace Project.Component
+﻿namespace Project.Component
 {
-	public struct PlayerFlag: IEcsIgnoreInFilter {}
+	public struct PlayerFlag
+	{
+		
+	}
 }

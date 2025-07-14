@@ -2,7 +2,7 @@
 
 namespace Project.Component
 {
-	public struct CurrentWeaponComponent : IEcsIgnoreInFilter
+	public struct CurrentWeaponComponent
 	{
 		public EcsEntity WeaponEntity;
 	}

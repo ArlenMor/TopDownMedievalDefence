@@ -31,6 +31,9 @@ namespace Project.System.Init
 			playerAnimator.Animator = playerGO.GetComponent<Animator>();
 			playerMoveSpeed.Speed = _staticData.PlayerData.MoveSpeed;
 			playerRotationSpeed.Speed = _staticData.PlayerData.RotationSpeed;
+			
+			ref var currentWeaponComponent = ref playerEntity.Get<CurrentWeaponComponent>();
+			currentWeaponComponent.WeaponEntity = EcsEntity.Null; 
 		}
 	}
 }

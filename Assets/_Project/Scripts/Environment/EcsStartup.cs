@@ -3,6 +3,7 @@ using Leopotam.Ecs.UnityIntegration;
 using Project.ConfigScripts;
 using Project.System.Init;
 using Project.System.Update.Player;
+using Project.System.Update.Weapon;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -51,7 +52,9 @@ namespace Project.EcsExample
 				   .Add(new PlayerInputSystem())
 				   .Add(new PlayerMoveSystem())
 				   .Add(new PlayerRotationSystem())
-				   .Add(new PlayerAnimationSystem());
+				   .Add(new PlayerAnimationSystem())
+				   .Add(new PlayerCurrentWeaponMoveSystem())
+				   .Add(new WeaponPickUpSystem());
 		}
 
 		private void InjectSystems(RuntimeData runtimeData)

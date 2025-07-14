@@ -215,12 +215,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 519420031}
   PlayerSpawnPoint: {fileID: 1485083071}
+  ItemLayer: {fileID: 2007244292}
   WeaponSpawnPoints:
   - {fileID: 825515463}
   - {fileID: 604189731}
   - {fileID: 159695677}
   EnemyLayer: {fileID: 1506338536}
-  ItemLayer: {fileID: 2007244292}
 --- !u!4 &231520482
 Transform:
   m_ObjectHideFlags: 0
@@ -3488,7 +3488,7 @@ Transform:
   m_GameObject: {fileID: 1485083070}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: -2, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

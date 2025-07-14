@@ -1,8 +1,6 @@
-﻿using Leopotam.Ecs;
-
-namespace Project.Component
+﻿namespace Project.Component
 {
-	public struct WeaponFlag : IEcsIgnoreInFilter
+	public struct WeaponFlag
 	{
 		
 	}

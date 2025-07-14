@@ -16,6 +16,11 @@ namespace Project.System.Update.Player
 
 				input.Direction = new Vector2(Input.GetAxisRaw(axisName: "Horizontal"),
 				                              Input.GetAxisRaw(axisName: "Vertical")).normalized;
+				
+				if (Input.GetKeyDown(KeyCode.E)) 
+				{
+					_player.GetEntity(i).Get<PickupInputEvent>();
+				}
 			}
 		}
 	}

@@ -34,6 +34,8 @@ namespace Project.System.Init
 			
 			ref var currentWeaponComponent = ref playerEntity.Get<CurrentWeaponComponent>();
 			currentWeaponComponent.WeaponEntity = EcsEntity.Null; 
+			
+			_sceneData.PlayerCamera.Follow = playerGO.transform;
 		}
 	}
 }

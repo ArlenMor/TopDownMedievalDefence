@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Unity.Cinemachine;
 using UnityEngine;
 
 namespace Project.EcsExample
@@ -7,6 +8,7 @@ namespace Project.EcsExample
 	{
 		[Header("Utilities")]
 		public Camera MainCamera;
+		public CinemachineCamera PlayerCamera;
 		
 		[Header("Player")]
 		public Transform PlayerSpawnPoint;

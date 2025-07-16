@@ -20,7 +20,8 @@ namespace Project.System.Init
 			playerEntity.Get<InputComponent>();
 
 			ref var playerTransform = ref playerEntity.Get<TransformComponent>();
-			ref var playerMoveSpeed = ref playerEntity.Get<MoveSpeedComponent>();
+			ref var playerRunSpeed = ref playerEntity.Get<RunSpeedComponent>();
+			ref var playerWalkSpeed = ref playerEntity.Get<WalkSpeedComponent>();
 			ref var playerRotationSpeed = ref playerEntity.Get<RotationSpeedComponent>();
 			ref var playerAnimator = ref playerEntity.Get<AnimatorComponent>();
 
@@ -29,7 +30,8 @@ namespace Project.System.Init
 
 			playerTransform.Transform = playerGO.GetComponent<Transform>();
 			playerAnimator.Animator = playerGO.GetComponent<Animator>();
-			playerMoveSpeed.Speed = _staticData.PlayerData.MoveSpeed;
+			playerRunSpeed.Speed = _staticData.PlayerData.MoveSpeed;
+			playerWalkSpeed.Speed = _staticData.PlayerData.WalkSpeed;
 			playerRotationSpeed.Speed = _staticData.PlayerData.RotationSpeed;
 			
 			ref var currentWeaponComponent = ref playerEntity.Get<CurrentWeaponComponent>();

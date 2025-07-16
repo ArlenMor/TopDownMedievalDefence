@@ -6,6 +6,7 @@ namespace Project.ConfigScripts
 	public class PlayerData: ScriptableObject
 	{
 		public GameObject Prefab;
+		public float WalkSpeed;
 		public float MoveSpeed;
 		public float RotationSpeed;
 	}

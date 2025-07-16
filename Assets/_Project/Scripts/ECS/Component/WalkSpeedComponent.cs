@@ -1,6 +1,6 @@
 ﻿namespace Project.Component
 {
-	public struct MoveSpeedComponent
+	public struct WalkSpeedComponent
 	{
 		public float Speed;
 	}

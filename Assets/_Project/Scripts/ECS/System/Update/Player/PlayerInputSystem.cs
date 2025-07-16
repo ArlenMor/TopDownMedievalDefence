@@ -21,6 +21,15 @@ namespace Project.System.Update.Player
 				{
 					_player.GetEntity(i).Get<PickupInputEvent>();
 				}
+				
+				if(Input.GetKey(KeyCode.LeftControl))
+				{
+					_player.GetEntity(i).Get<WalkInputEvent>();
+				}
+				else if (_player.GetEntity(i).Has<WalkInputEvent>())
+				{
+					_player.GetEntity(i).Del<WalkInputEvent>();
+				}
 			}
 		}
 	}

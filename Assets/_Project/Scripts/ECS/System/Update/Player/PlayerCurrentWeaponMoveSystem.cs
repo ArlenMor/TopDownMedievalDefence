@@ -21,8 +21,7 @@ namespace Project.System.Update.Player
 					var weaponTransform = weaponTransformComponent.Transform;
 					var playerTf = playerTransform.Transform;
 
-					// Смещение перед игроком (по правой локальной оси — для 2D)
-					var offset = playerTf.up * 1f; // 0.5 — расстояние до оружия (можно вынести в константу)
+					var offset = playerTf.up * 1f;
 
 					weaponTransform.position = playerTf.position + offset;
 					weaponTransform.rotation = playerTf.rotation;

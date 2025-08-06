@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b524eac778cf449fa9002cd48a423739, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4303179397094637710, guid: 62eaa1031248ca34bbb42319f35e2ead, type: 3}
+  Prefab: {fileID: 8476863231362587950, guid: 62eaa1031248ca34bbb42319f35e2ead, type: 3}
   WalkSpeed: 4
   MoveSpeed: 6
   RotationSpeed: 750
